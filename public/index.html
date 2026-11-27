@@ -9,18 +9,12 @@
       content="OpenForge Foundation builds fast, open-source libraries for scientific and technical computing in C++ and Python."
     />
     <link rel="icon" href="/logo-square.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/css/site.css" />
     <script>
       try {
         const t = localStorage.getItem("theme");
         if (t) document.documentElement.setAttribute("data-theme", t);
-      } catch (e) {}
+      } catch {}
     </script>
   </head>
   <body>
@@ -30,12 +24,13 @@
       <div class="container">
         <a class="brand" href="/">
           <img src="/logo-square.svg" alt="" />
-          OpenForge <span>Foundation</span>
+          OpenForge Foundation
         </a>
         <nav class="nav" id="site-nav" aria-label="Main">
-          <a href="/about/">About</a>
+          <a href="/docs/">Docs</a>
           <a href="/projects/">Projects</a>
           <a href="/community/">Community</a>
+          <a href="/about/">About</a>
         </nav>
         <div class="header-actions">
           <a class="icon-btn" href="https://github.com/OpenForge-Foundation" aria-label="OpenForge on GitHub">
@@ -52,150 +47,95 @@
       </div>
     </header>
 
-    <div class="announce">
-      <div class="container">
-        <span class="badge">New</span>
-        <span>ProbForge is in early development — follow along and contribute on
-          <a href="https://github.com/OpenForge-Foundation/probforge">GitHub</a>.</span>
-      </div>
-    </div>
-
     <main id="main">
       <section class="hero">
         <div class="container">
+          <img class="hero-logo" src="/logo-square.svg" alt="" />
           <div>
-            <span class="eyebrow">Open-source scientific computing</span>
-            <h1>Fast, open tools <em>forged</em> for science and engineering.</h1>
-            <p class="lede">
-              OpenForge Foundation builds high-performance libraries with C++ cores and
-              friendly Python interfaces — free to use, open to everyone, and shaped by
-              the people who use them.
-            </p>
+            <h1>OpenForge Foundation</h1>
+            <p class="tagline">Fast, open-source libraries for scientific computing in C++ and Python.</p>
             <div class="actions">
-              <a class="btn btn-primary" href="/projects/">Explore projects</a>
-              <a class="btn btn-ghost" href="/community/">Get involved</a>
+              <a class="btn" href="/docs/">Get started</a>
+              <a class="btn btn-outline" href="/projects/">Browse projects</a>
             </div>
           </div>
-          <svg class="hero-mark" viewBox="140 80 740 410" aria-hidden="true">
-            <path class="slate" d="M215 90 L858 90 C875 90 877 98 867 111 C832 153 771 179 681 200 C615 215 562 225 511 245 C444 271 390 319 341 354 C318 371 294 384 269 389 C306 364 322 338 316 313 C311 290 288 276 252 273 L209 272 C174 271 150 250 150 217 L150 159 C150 119 176 90 215 90 Z"/>
-            <path d="M224 469 C224 450 234 429 255 418 C287 402 313 396 339 378 C394 342 445 291 507 260 C558 234 618 217 697 207 C648 246 624 290 624 331 C624 359 641 380 669 390 C705 403 724 429 726 460 C727 470 720 476 710 476 L234 476 C227 476 224 474 224 469 Z" fill="#a9b296"/>
-          </svg>
         </div>
       </section>
 
+      <div class="news">
+        <div class="container">
+          <strong>Latest:</strong> ProbForge is in early development.
+          <a href="https://github.com/OpenForge-Foundation/probforge">Follow along on GitHub</a>.
+        </div>
+      </div>
+
       <section class="section">
         <div class="container">
-          <div class="section-head">
-            <span class="eyebrow">Why OpenForge</span>
-            <h2>Built for speed. Designed for people.</h2>
-            <p>Every OpenForge library follows the same principles, so once you know one, you know them all.</p>
-          </div>
-          <div class="grid grid-4">
-            <article class="card">
-              <div class="feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-              </div>
-              <h3>Fast by default</h3>
-              <p>Performance-critical code is written in modern C++ so heavy numerical work runs at native speed.</p>
-            </article>
-            <article class="card">
-              <div class="feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg>
-              </div>
-              <h3>Pythonic interfaces</h3>
-              <p>First-class Python bindings mean you get C++ speed with the ergonomics of the Python ecosystem.</p>
-            </article>
-            <article class="card">
-              <div class="feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg>
-              </div>
+          <h2>Why OpenForge</h2>
+          <div class="features">
+            <div>
+              <h3>Fast</h3>
+              <p>Numerical work is written in modern C++, so it runs at native speed.</p>
+            </div>
+            <div>
+              <h3>Easy to use</h3>
+              <p>Every library ships Python bindings that fit naturally into the Python ecosystem.</p>
+            </div>
+            <div>
               <h3>Open source</h3>
-              <p>Permissively licensed and developed in the open. Read the code, fork it, ship it.</p>
-            </article>
-            <article class="card">
-              <div class="feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18.5 14.5A6.5 6.5 0 0 1 21.5 20"/></svg>
-              </div>
-              <h3>Community driven</h3>
-              <p>Roadmaps, reviews and decisions happen in public. Contributors of every level are welcome.</p>
-            </article>
+              <p>Permissively licensed and developed in public. Read it, fork it, use it anywhere.</p>
+            </div>
+            <div>
+              <h3>Consistent</h3>
+              <p>Projects share the same structure and conventions, so learning one helps with the rest.</p>
+            </div>
+            <div>
+              <h3>Documented</h3>
+              <p>User guides and API references live alongside the code and grow with each release.</p>
+            </div>
+            <div>
+              <h3>Community-built</h3>
+              <p>Plans, reviews and decisions happen on GitHub, and everyone is welcome to contribute.</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="section section-alt">
         <div class="container">
-          <div class="section-head">
-            <span class="eyebrow">Projects</span>
-            <h2>The OpenForge ecosystem</h2>
-            <p>Focused libraries that each do one job well — and work together.</p>
-          </div>
-          <div class="grid grid-2">
-            <a class="card project-card" href="https://github.com/OpenForge-Foundation/probforge">
-              <header>
-                <h3>ProbForge</h3>
-                <span class="badge">In development</span>
-              </header>
-              <p>
-                High-performance probability distributions and statistical functions — PDFs, CDFs,
-                moments and more — implemented in C++ with Python bindings.
-              </p>
-              <div class="meta">
-                <span class="tag">C++</span><span class="tag">Python</span><span class="tag">Statistics</span>
-              </div>
-            </a>
-            <a class="card project-card" href="https://github.com/OpenForge-Foundation/physicsforge">
-              <header>
-                <h3>PhysicsForge</h3>
-                <span class="badge badge-muted">Planned</span>
-              </header>
-              <p>
-                Fast physics computation for C++ and Python — the building blocks for simulation,
-                modelling and research code.
-              </p>
-              <div class="meta">
-                <span class="tag">C++</span><span class="tag">Python</span><span class="tag">Physics</span>
-              </div>
-            </a>
+          <h2>Projects</h2>
+          <div class="projects">
+            <div class="project">
+              <h3><a href="https://github.com/OpenForge-Foundation/probforge">ProbForge</a> <span class="status">In development</span></h3>
+              <p>Probability distributions and statistical functions (PDFs, CDFs, moments and more) with a C++ core and Python bindings.</p>
+              <p class="links"><a href="/docs/#probforge">Docs</a><a href="https://github.com/OpenForge-Foundation/probforge">Source</a></p>
+            </div>
+            <div class="project">
+              <h3><a href="https://github.com/OpenForge-Foundation/physicsforge">PhysicsForge</a> <span class="status">Planned</span></h3>
+              <p>Fast physics computation for C++ and Python: building blocks for simulation and research code.</p>
+              <p class="links"><a href="/docs/#physicsforge">Docs</a><a href="https://github.com/OpenForge-Foundation/physicsforge">Source</a></p>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="section">
-        <div class="container split">
+        <div class="container two-col">
           <div>
-            <span class="eyebrow">Get involved</span>
-            <h2>Help us build the forge.</h2>
+            <h2>Get involved</h2>
             <p>
-              OpenForge is young, which means your contributions shape what it becomes. Whether you write
-              code, docs, tests or just open a good issue, there's a place for you.
+              OpenForge is a young project, so contributions make a real difference. Code, documentation,
+              tests and bug reports are all welcome.
             </p>
-            <ul class="checklist">
-              <li>Pick up an issue on any project repository</li>
-              <li>Improve documentation and examples</li>
-              <li>Propose a new library or feature</li>
-              <li>Report bugs and share what you build</li>
-            </ul>
-            <a class="btn btn-outline" href="/community/">Start contributing</a>
+            <p><a href="/community/">How to contribute &rarr;</a></p>
           </div>
           <div>
-            <pre><code><span style="color:#97a6b3"># Grab the source (it uses submodules)</span>
-git clone --recurse-submodules \
-  https://github.com/OpenForge-Foundation/probforge.git
-cd probforge
-<span style="color:#97a6b3"># Then follow the build steps in README.md</span></code></pre>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" style="padding-top: 0">
-        <div class="container">
-          <div class="cta-band">
-            <div>
-              <h2>Support open-source science</h2>
-              <p>Star a repo, share the project, or reach out about sponsorship.</p>
-            </div>
-            <a class="btn btn-primary" href="https://github.com/OpenForge-Foundation">Follow on GitHub</a>
+            <h2>Support us</h2>
+            <p>
+              The easiest way to help is to star the repositories, share the projects, and tell us what you
+              build with them.
+            </p>
+            <p><a href="https://github.com/OpenForge-Foundation">OpenForge on GitHub &rarr;</a></p>
           </div>
         </div>
       </section>
@@ -204,23 +144,22 @@ cd probforge
     <footer class="site-footer">
       <div class="container">
         <div class="footer-grid">
-          <div class="footer-brand">
-            <a class="brand" href="/"><img src="/logo-square.svg" alt="" />OpenForge <span>Foundation</span></a>
+          <div>
+            <h4>OpenForge Foundation</h4>
             <p>Empowering open-source programming and technology-related content.</p>
           </div>
           <div>
-            <h4>Foundation</h4>
+            <h4>Learn</h4>
             <ul>
-              <li><a href="/about/">About</a></li>
-              <li><a href="/community/">Community</a></li>
+              <li><a href="/docs/">Documentation</a></li>
+              <li><a href="/projects/">Projects</a></li>
             </ul>
           </div>
           <div>
-            <h4>Projects</h4>
+            <h4>Community</h4>
             <ul>
-              <li><a href="https://github.com/OpenForge-Foundation/probforge">ProbForge</a></li>
-              <li><a href="https://github.com/OpenForge-Foundation/physicsforge">PhysicsForge</a></li>
-              <li><a href="/projects/">All projects</a></li>
+              <li><a href="/community/">Contribute</a></li>
+              <li><a href="/about/">About</a></li>
             </ul>
           </div>
           <div>
@@ -230,10 +169,7 @@ cd probforge
             </ul>
           </div>
         </div>
-        <div class="footer-bottom">
-          <span>&copy; <span id="year">2026</span> OpenForge Foundation</span>
-          <span>Projects are open source under their respective licenses.</span>
-        </div>
+        <div class="footer-bottom">&copy; <span id="year">2026</span> OpenForge Foundation</div>
       </div>
     </footer>
 

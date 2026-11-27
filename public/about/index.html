@@ -9,18 +9,12 @@
       content="About OpenForge Foundation: our mission, values and how we work."
     />
     <link rel="icon" href="/logo-square.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/css/site.css" />
     <script>
       try {
         const t = localStorage.getItem("theme");
         if (t) document.documentElement.setAttribute("data-theme", t);
-      } catch (e) {}
+      } catch {}
     </script>
   </head>
   <body>
@@ -30,12 +24,13 @@
       <div class="container">
         <a class="brand" href="/">
           <img src="/logo-square.svg" alt="" />
-          OpenForge <span>Foundation</span>
+          OpenForge Foundation
         </a>
         <nav class="nav" id="site-nav" aria-label="Main">
-          <a href="/about/" aria-current="page">About</a>
+          <a href="/docs/">Docs</a>
           <a href="/projects/">Projects</a>
           <a href="/community/">Community</a>
+          <a href="/about/" aria-current="page">About</a>
         </nav>
         <div class="header-actions">
           <a class="icon-btn" href="https://github.com/OpenForge-Foundation" aria-label="OpenForge on GitHub">
@@ -53,26 +48,24 @@
     </header>
 
     <main id="main">
-      <section class="page-hero">
+      <section class="page-title">
         <div class="container">
-          <span class="eyebrow">About</span>
-          <h1>About OpenForge</h1>
+          <h1>About</h1>
           <p>A foundation for fast, open, community-built software for science and engineering.</p>
         </div>
       </section>
 
       <section class="section">
         <div class="container prose">
-          <h2>Our mission</h2>
+          <h2>Mission</h2>
           <p>
-            OpenForge Foundation exists to empower open-source programming and technology-related
-            content. We build and maintain libraries that make serious computation accessible: native
-            performance where it matters, approachable APIs everywhere else, and source code anyone can
-            read, learn from and improve.
+            OpenForge Foundation exists to empower open-source programming and technology-related content.
+            We build and maintain libraries that make serious computation accessible: native performance where
+            it matters, approachable APIs everywhere else, and source code anyone can read and improve.
           </p>
 
-          <h2>What we value</h2>
-          <ul class="checklist">
+          <h2>Values</h2>
+          <ul>
             <li><strong>Performance with clarity.</strong> Fast code should still be readable code.</li>
             <li><strong>Openness.</strong> Code, discussion and decisions happen in public.</li>
             <li><strong>Consistency.</strong> Shared conventions across projects so knowledge transfers.</li>
@@ -81,16 +74,16 @@
 
           <h2>How we work</h2>
           <p>
-            Each OpenForge project lives in its own repository under the
-            <a href="https://github.com/OpenForge-Foundation">OpenForge-Foundation</a> GitHub organization.
-            Projects share a common approach: a C++ core, Python bindings, automated tests, and
-            documentation that lives alongside the code.
+            Each project lives in its own repository under the
+            <a href="https://github.com/OpenForge-Foundation">OpenForge-Foundation</a> GitHub organization and
+            follows the same approach: a C++ core, Python bindings, automated tests, and documentation alongside
+            the code.
           </p>
 
           <h2>Governance</h2>
           <p>
-            OpenForge is in its early days. As the community grows we'll publish a governance model,
-            code of conduct and contribution guidelines here.
+            OpenForge is in its early days. As the community grows we'll publish a governance model, code of
+            conduct and contribution guidelines here.
           </p>
         </div>
       </section>
@@ -99,23 +92,22 @@
     <footer class="site-footer">
       <div class="container">
         <div class="footer-grid">
-          <div class="footer-brand">
-            <a class="brand" href="/"><img src="/logo-square.svg" alt="" />OpenForge <span>Foundation</span></a>
+          <div>
+            <h4>OpenForge Foundation</h4>
             <p>Empowering open-source programming and technology-related content.</p>
           </div>
           <div>
-            <h4>Foundation</h4>
+            <h4>Learn</h4>
             <ul>
-              <li><a href="/about/">About</a></li>
-              <li><a href="/community/">Community</a></li>
+              <li><a href="/docs/">Documentation</a></li>
+              <li><a href="/projects/">Projects</a></li>
             </ul>
           </div>
           <div>
-            <h4>Projects</h4>
+            <h4>Community</h4>
             <ul>
-              <li><a href="https://github.com/OpenForge-Foundation/probforge">ProbForge</a></li>
-              <li><a href="https://github.com/OpenForge-Foundation/physicsforge">PhysicsForge</a></li>
-              <li><a href="/projects/">All projects</a></li>
+              <li><a href="/community/">Contribute</a></li>
+              <li><a href="/about/">About</a></li>
             </ul>
           </div>
           <div>
@@ -125,10 +117,7 @@
             </ul>
           </div>
         </div>
-        <div class="footer-bottom">
-          <span>&copy; <span id="year">2026</span> OpenForge Foundation</span>
-          <span>Projects are open source under their respective licenses.</span>
-        </div>
+        <div class="footer-bottom">&copy; <span id="year">2026</span> OpenForge Foundation</div>
       </div>
     </footer>
 

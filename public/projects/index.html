@@ -9,18 +9,12 @@
       content="OpenForge projects: ProbForge, PhysicsForge and more."
     />
     <link rel="icon" href="/logo-square.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/css/site.css" />
     <script>
       try {
         const t = localStorage.getItem("theme");
         if (t) document.documentElement.setAttribute("data-theme", t);
-      } catch (e) {}
+      } catch {}
     </script>
   </head>
   <body>
@@ -30,12 +24,13 @@
       <div class="container">
         <a class="brand" href="/">
           <img src="/logo-square.svg" alt="" />
-          OpenForge <span>Foundation</span>
+          OpenForge Foundation
         </a>
         <nav class="nav" id="site-nav" aria-label="Main">
-          <a href="/about/">About</a>
+          <a href="/docs/">Docs</a>
           <a href="/projects/" aria-current="page">Projects</a>
           <a href="/community/">Community</a>
+          <a href="/about/">About</a>
         </nav>
         <div class="header-actions">
           <a class="icon-btn" href="https://github.com/OpenForge-Foundation" aria-label="OpenForge on GitHub">
@@ -53,63 +48,37 @@
     </header>
 
     <main id="main">
-      <section class="page-hero">
+      <section class="page-title">
         <div class="container">
-          <span class="eyebrow">Projects</span>
-          <h1>Our projects</h1>
-          <p>Focused, high-performance libraries for C++ and Python. All developed in the open on GitHub.</p>
+          <h1>Projects</h1>
+          <p>Focused, high-performance libraries for C++ and Python, all developed in the open.</p>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
-          <div class="grid grid-2">
-            <article class="card project-card">
-              <header>
-                <h3>ProbForge</h3>
-                <span class="badge">In development</span>
-              </header>
+          <div class="projects">
+            <div class="project">
+              <h3><a href="https://github.com/OpenForge-Foundation/probforge">ProbForge</a> <span class="status">In development</span></h3>
               <p>
-                High-performance implementations of common probability distributions and related
-                statistical functions — means, variances, moment-generating functions, PDFs and CDFs —
-                with a C++ core and Python bindings.
+                High-performance implementations of common probability distributions and related statistical
+                functions (means, variances, moment-generating functions, PDFs and CDFs) with a C++ core and
+                Python bindings.
               </p>
-              <div class="meta">
-                <span class="tag">C++</span><span class="tag">Python</span><span class="tag">Statistics</span>
-              </div>
-              <p style="margin-top: 1.25rem">
-                <a class="btn btn-outline" href="https://github.com/OpenForge-Foundation/probforge">View on GitHub</a>
-              </p>
-            </article>
-            <article class="card project-card">
-              <header>
-                <h3>PhysicsForge</h3>
-                <span class="badge badge-muted">Planned</span>
-              </header>
-              <p>
-                Quick physics computation in C++ and Python. PhysicsForge will provide the core building
-                blocks for simulation and research code. Apache-2.0 licensed.
-              </p>
-              <div class="meta">
-                <span class="tag">C++</span><span class="tag">Python</span><span class="tag">Physics</span>
-              </div>
-              <p style="margin-top: 1.25rem">
-                <a class="btn btn-outline" href="https://github.com/OpenForge-Foundation/physicsforge">View on GitHub</a>
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" style="padding-top: 0">
-        <div class="container">
-          <div class="cta-band">
-            <div>
-              <h2>Have an idea for a new library?</h2>
-              <p>Open a discussion on GitHub and tell us what you'd like to see forged next.</p>
+              <p class="links"><a href="/docs/#probforge">Docs</a><a href="https://github.com/OpenForge-Foundation/probforge">Source</a><a href="https://github.com/OpenForge-Foundation/probforge/issues">Issues</a></p>
             </div>
-            <a class="btn btn-primary" href="https://github.com/OpenForge-Foundation">Start a conversation</a>
+            <div class="project">
+              <h3><a href="https://github.com/OpenForge-Foundation/physicsforge">PhysicsForge</a> <span class="status">Planned</span></h3>
+              <p>
+                Quick physics computation in C++ and Python, providing the core building blocks for simulation
+                and research code. Apache-2.0 licensed.
+              </p>
+              <p class="links"><a href="/docs/#physicsforge">Docs</a><a href="https://github.com/OpenForge-Foundation/physicsforge">Source</a><a href="https://github.com/OpenForge-Foundation/physicsforge/issues">Issues</a></p>
+            </div>
           </div>
+          <p class="muted" style="margin-top: 2rem">
+            Have an idea for a new library? <a href="https://github.com/OpenForge-Foundation">Start a conversation on GitHub</a>.
+          </p>
         </div>
       </section>
     </main>
@@ -117,23 +86,22 @@
     <footer class="site-footer">
       <div class="container">
         <div class="footer-grid">
-          <div class="footer-brand">
-            <a class="brand" href="/"><img src="/logo-square.svg" alt="" />OpenForge <span>Foundation</span></a>
+          <div>
+            <h4>OpenForge Foundation</h4>
             <p>Empowering open-source programming and technology-related content.</p>
           </div>
           <div>
-            <h4>Foundation</h4>
+            <h4>Learn</h4>
             <ul>
-              <li><a href="/about/">About</a></li>
-              <li><a href="/community/">Community</a></li>
+              <li><a href="/docs/">Documentation</a></li>
+              <li><a href="/projects/">Projects</a></li>
             </ul>
           </div>
           <div>
-            <h4>Projects</h4>
+            <h4>Community</h4>
             <ul>
-              <li><a href="https://github.com/OpenForge-Foundation/probforge">ProbForge</a></li>
-              <li><a href="https://github.com/OpenForge-Foundation/physicsforge">PhysicsForge</a></li>
-              <li><a href="/projects/">All projects</a></li>
+              <li><a href="/community/">Contribute</a></li>
+              <li><a href="/about/">About</a></li>
             </ul>
           </div>
           <div>
@@ -143,10 +111,7 @@
             </ul>
           </div>
         </div>
-        <div class="footer-bottom">
-          <span>&copy; <span id="year">2026</span> OpenForge Foundation</span>
-          <span>Projects are open source under their respective licenses.</span>
-        </div>
+        <div class="footer-bottom">&copy; <span id="year">2026</span> OpenForge Foundation</div>
       </div>
     </footer>
 

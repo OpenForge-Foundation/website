@@ -9,18 +9,12 @@
       content="Get involved with OpenForge Foundation: contribute code, docs and ideas."
     />
     <link rel="icon" href="/logo-square.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/css/site.css" />
     <script>
       try {
         const t = localStorage.getItem("theme");
         if (t) document.documentElement.setAttribute("data-theme", t);
-      } catch (e) {}
+      } catch {}
     </script>
   </head>
   <body>
@@ -30,12 +24,13 @@
       <div class="container">
         <a class="brand" href="/">
           <img src="/logo-square.svg" alt="" />
-          OpenForge <span>Foundation</span>
+          OpenForge Foundation
         </a>
         <nav class="nav" id="site-nav" aria-label="Main">
-          <a href="/about/">About</a>
+          <a href="/docs/">Docs</a>
           <a href="/projects/">Projects</a>
           <a href="/community/" aria-current="page">Community</a>
+          <a href="/about/">About</a>
         </nav>
         <div class="header-actions">
           <a class="icon-btn" href="https://github.com/OpenForge-Foundation" aria-label="OpenForge on GitHub">
@@ -53,63 +48,36 @@
     </header>
 
     <main id="main">
-      <section class="page-hero">
+      <section class="page-title">
         <div class="container">
-          <span class="eyebrow">Community</span>
-          <h1>Get involved</h1>
-          <p>OpenForge is built by its contributors. Here's how to jump in.</p>
+          <h1>Community</h1>
+          <p>OpenForge is built by its contributors. Here's how to get involved.</p>
         </div>
       </section>
 
       <section class="section">
-        <div class="container split" style="align-items: start">
-          <div>
-            <h2>Your first contribution</h2>
-            <ol class="steps">
-              <li>
-                <h3>Find a project</h3>
-                <p>Browse the <a href="/projects/">projects</a> and pick one that interests you.</p>
-              </li>
-              <li>
-                <h3>Pick an issue</h3>
-                <p>Look for open issues, or open one describing the bug or feature you have in mind.</p>
-              </li>
-              <li>
-                <h3>Fork and build</h3>
-                <p>Fork the repo, clone it with submodules, and follow its README to build locally.</p>
-              </li>
-              <li>
-                <h3>Open a pull request</h3>
-                <p>Keep it focused, include tests where it makes sense, and we'll review it together.</p>
-              </li>
-            </ol>
-          </div>
-          <div class="grid">
-            <div class="card">
-              <h3>Write code</h3>
-              <p>C++ cores, Python bindings, tests and tooling — there's work at every level.</p>
-            </div>
-            <div class="card">
-              <h3>Write docs</h3>
-              <p>Tutorials, examples and API docs make a library usable. They're contributions too.</p>
-            </div>
-            <div class="card">
-              <h3>Report and discuss</h3>
-              <p>Found a bug or have a use case we should support? Open an issue and tell us about it.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        <div class="container prose">
+          <h2>Your first contribution</h2>
+          <ol>
+            <li><strong>Find a project.</strong> Browse the <a href="/projects/">projects</a> and pick one that interests you.</li>
+            <li><strong>Pick an issue.</strong> Look through open issues, or open one describing the bug or feature you have in mind.</li>
+            <li><strong>Fork and build.</strong> Fork the repository, clone it with submodules, and follow its README to build locally.</li>
+            <li><strong>Open a pull request.</strong> Keep it focused, add tests where it makes sense, and we'll review it together.</li>
+          </ol>
 
-      <section class="section" style="padding-top: 0">
-        <div class="container">
-          <div class="cta-band">
-            <div>
-              <h2>Join us on GitHub</h2>
-              <p>Everything happens in the open at the OpenForge-Foundation organization.</p>
-            </div>
-            <a class="btn btn-primary" href="https://github.com/OpenForge-Foundation">Go to GitHub</a>
-          </div>
+          <h2>Ways to help</h2>
+          <ul>
+            <li><strong>Code:</strong> C++ cores, Python bindings, tests and tooling.</li>
+            <li><strong>Documentation:</strong> tutorials, examples and API docs. See the <a href="/docs/">docs</a>.</li>
+            <li><strong>Feedback:</strong> report bugs and tell us about your use cases.</li>
+          </ul>
+
+          <h2>Where we talk</h2>
+          <p>
+            Everything happens in the open on GitHub at
+            <a href="https://github.com/OpenForge-Foundation">OpenForge-Foundation</a>, in issues and pull
+            requests on each project.
+          </p>
         </div>
       </section>
     </main>
@@ -117,23 +85,22 @@
     <footer class="site-footer">
       <div class="container">
         <div class="footer-grid">
-          <div class="footer-brand">
-            <a class="brand" href="/"><img src="/logo-square.svg" alt="" />OpenForge <span>Foundation</span></a>
+          <div>
+            <h4>OpenForge Foundation</h4>
             <p>Empowering open-source programming and technology-related content.</p>
           </div>
           <div>
-            <h4>Foundation</h4>
+            <h4>Learn</h4>
             <ul>
-              <li><a href="/about/">About</a></li>
-              <li><a href="/community/">Community</a></li>
+              <li><a href="/docs/">Documentation</a></li>
+              <li><a href="/projects/">Projects</a></li>
             </ul>
           </div>
           <div>
-            <h4>Projects</h4>
+            <h4>Community</h4>
             <ul>
-              <li><a href="https://github.com/OpenForge-Foundation/probforge">ProbForge</a></li>
-              <li><a href="https://github.com/OpenForge-Foundation/physicsforge">PhysicsForge</a></li>
-              <li><a href="/projects/">All projects</a></li>
+              <li><a href="/community/">Contribute</a></li>
+              <li><a href="/about/">About</a></li>
             </ul>
           </div>
           <div>
@@ -143,10 +110,7 @@
             </ul>
           </div>
         </div>
-        <div class="footer-bottom">
-          <span>&copy; <span id="year">2026</span> OpenForge Foundation</span>
-          <span>Projects are open source under their respective licenses.</span>
-        </div>
+        <div class="footer-bottom">&copy; <span id="year">2026</span> OpenForge Foundation</div>
       </div>
     </footer>
 
